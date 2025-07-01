@@ -1,0 +1,792 @@
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+}
+
+.logo {
+    margin-left: 80px;
+    height: 50px;
+    width: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0; 
+    margin: 0; 
+    margin-left: 800px;
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+}
+nav li {
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.auth-button {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 150px;
+}
+.fonfoto {
+    max-width: 100%;
+
+    position: relative;
+}
+.text{
+    z-index: 100;
+    position: absolute;
+    color: rgb(255 255 255);
+    font-size: 40px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+    margin-right: 1000px;
+}
+.text1{
+    z-index: 100;
+    position: absolute;
+    color: rgb(255 255 255);
+    font-size: 20px;
+    left: 150px;
+    top: 530px;
+    margin-right: 1000px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    flex-direction: column;
+    transform: scale(100%);
+    height: 100%;
+}
+.button{
+    z-index: 100;
+    position: absolute;
+    color: rgb(9, 35, 91);
+    font-size: 13px;
+    left: 150px;
+    top: 580px;
+    margin-right: 1000px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 70px; 
+}
+
+.product {
+    position: relative; 
+    width: calc(25% - 20px); 
+    overflow: hidden; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.fhoto1 {
+    width: 100%; 
+    height: auto;
+}
+
+.price {
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center;
+    text-decoration-line: overline;
+}
+
+.product h2 {
+    margin: 10px 0;
+}
+
+.product h5 {
+    margin: 5px 0;
+}
+
+.product a {
+    display: inline-block; 
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.rect1{
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 35%;
+}
+.rect2{
+  height: 500px;
+  width: 100%;
+  background-color: #D0E8EA;
+
+}
+.text3{
+    position: absolute;
+    color: #af9680;
+    font-size: 40px;
+    font-weight: bold;
+    left: 150px;
+    margin-top: -46px;
+    margin-right: 700px;
+}
+.fhotka{
+    margin-top: 100px;
+    height: 680px;
+    position: relative;
+    left: 150px;
+}
+.colons{
+    margin: 48px 500px 120px 150px;
+    column-count: 2;
+    column-gap: 100px;
+}
+.colons {
+    break-inside: avoid; 
+    margin-top: 20px; 
+}
+
+.colons p {
+    margin: 10px 0; 
+}
+
+.colons a {
+    display: inline-block; 
+    margin-top: 10px; 
+    color: #0088cc; 
+}
+.uiop{
+    height: 700px;
+    margin-left: 70px;
+    margin-right: 20px;
+    float: left;
+}
+
+h1{
+    font-weight: normal;
+    margin: 10px 370px 50px 150px;
+    color: #1B365D;
+}
+.pop{
+    margin-right: 200px;
+    color: #615E5C;
+    margin-top: -30px;
+    margin-left: 670px;
+}
+
+/* Основной стиль для nav */
+nav {
+    display: flex;
+    justify-content: space-between; /* Размещает элементы по краям */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    background-color: white; /* Белый фон */
+    padding: 10px 20px; /* Поля вокруг содержимого */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для разделения от остального контента */
+    position: relative; /* Для позиционирования других элементов */
+}
+
+/* Логотип */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+/* Список ссылок */
+.nav-links {
+    display: flex;
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Отступ между ссылками */
+}
+
+.nav-links a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #af9680; /* Цвет ссылок */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 500; /* Жирность текста */
+    transition: color 0.3s ease; /* Анимация при наведении */
+}
+
+.nav-links a:hover {
+    color: #816547; /* Изменение цвета при наведении */
+}
+
+/* Кнопка Авторизации */
+.auth-button {
+    background-color: white; /* Белый фон */
+    border: 1px solid #af9680;
+    color: #af9680; /* Цвет текста */
+    padding: 10px 20px; /* Поля внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 500; /* Жирность текста */
+    border-radius: 4px; /* Сглаженные углы */
+    cursor: pointer; /* Указатель мыши при наведении */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация при наведении */
+}
+
+.auth-button:hover {
+    background-color:  #816547; /* Изменение фона при наведении */
+    color: white; /* Изменение цвета текста при наведении */
+}
+
+/* Корректировка последнего элемента списка */
+.nav-links li:last-child {
+    margin-right: 0; /* Убираем отступ у последней ссылки */
+}
+.blue1{
+    height: 100px;
+    margin: 100px 0px 0px 100px;
+}
+.text5{
+    position: absolute;
+    color: #1B365D;
+    font-size: 40px;
+    font-weight: bold;
+    left: 100px;
+    margin-top: 200px;
+    margin-right: 900px;
+}
+.text6{
+    position: absolute;
+    color: #615E5C;
+    left: 100px;
+    margin-right: 1000px;
+    margin-top: 100px;
+}
+.button1{
+    z-index: 100;
+    position: absolute;
+    color: #1B365D;
+    font-size: 13px;
+    left: 100px;
+    top: 4496px;
+    border-radius: 20px;
+    border: 1px solid #ADD4E0;
+    background-color: #ADD4E0;
+    padding: 10px 20px;
+}
+.fhoto8{
+    float: right;
+    height: 600px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.fhoto5{
+    height: 650px;
+    margin: 70px 10px 0px 63px;
+}
+.fff{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin:  100px 0px 0px 123px;
+}
+.fff1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin:  100px 0px 0px 123px;
+}
+.ggg{    
+    position: absolute;
+    font-size: 16px;
+    color: #000000;
+    margin:  150px 900px 0px 123px;
+}
+.ggg5{
+    position: absolute;
+    font-size: 16px;
+    color: #000000;
+    margin:  150px 224px 0px 123px;
+}
+.www{
+    position: absolute;
+    font-size: 16px;
+    color: #000000;
+    margin:  250px 900px 0px 123px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.www1{
+    position: absolute;
+    font-size: 16px;
+    color: #000000;
+    margin:  250px 0px 0px 123px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fgw{
+    color: #FFFFFF;    
+    margin-top: -500px;
+    margin-left: 700px;
+    margin-right: -650px;
+}
+.textg{
+    position: absolute;
+    color: #af9680;
+    font-size: 40px;
+    font-weight: bold;
+    left: 100px;
+    margin-top: 20%;
+    margin-right: 950px;
+}
+.qwer{
+    position: absolute;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: -50px;
+}
+.ggg1{    
+    position: absolute;
+    font-size: 16px;
+    color: #434140;
+    margin-left: 175px;
+    margin-top: -50px;
+    text-decoration: none;
+}
+.ggg2{    
+    position: absolute;
+    font-size: 16px;
+    color: #434140;
+    margin-left: 175px;
+    margin-top: -30px;
+    text-decoration: none;
+}
+.buk {
+  position: relative; /* Основной контейнер */
+  width: 100%;
+  height: 100vh; /* Высота на весь экран */
+  overflow: hidden; /* Скрываем выходящие за границы элементы */
+}
+
+.fhoto7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Сохраняем пропорции изображения */
+  z-index: 1; /* Изображение на заднем плане */
+  top: 15px;
+}
+
+.text4, .tyu, .tyu2, .tyu3 {
+  position: absolute;
+  left: 5%; /* Отступ от левого края */
+  z-index: 2; /* Текст поверх изображения */
+  color: #423932; /* Цвет текста */
+  width: 35%; /* Ширина текстового блока */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Тень для читаемости */
+}
+
+.text4 {
+  top: 15%;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.tyu {
+  top: 35%;
+  font-size: 1.2rem;
+}
+
+.tyu2 {
+  top: 50%;
+  font-size: 1.2rem;
+}
+
+.tyu3 {
+  top: 68%;
+  font-size: 1.2rem;
+}
+.cards {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    top: 20px;
+    position: relative; /* Позволяет позиционировать элементы внутри карточки */
+    overflow: hidden; /* Скроет части содержимого за границами карточки */
+    padding: 11px 18px 11px 18px;
+}
+
+.cards_item:hover {
+    transform: scale(1.02); /* Увеличение карточки при наведении*/
+}
+
+.card-title {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    left: 25px;
+}
+
+.card-subtitle {
+    position: relative;
+    top: 20px; /* Отступ сверху */
+    left: 140px; /* Отступ справа */
+    font-size: 20px; /* Размер шрифта цены */
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+.card-text {
+    margin-top: 60px; /* Отступ между изображением и текстом описания */
+    padding: 10px; /* Внутренние отступы для текста */
+    text-align: center; /* Центрирование текста */
+}
+
+.btn {
+    display: block; /* Кнопки занимают всю ширину родителя */
+    
+    margin: 10px auto; /* Центрирование кнопок */
+    padding: 10px; /* Внутренние отступы для кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Без границы */
+    border-radius: 25px;
+}
+
+a.btn-link {
+    display: block; /* Ссылка занимает всю ширину родителя */
+    text-align: center; /* Центрирование текста в ссылке */
+    margin-top: 5px; /* Отступ сверху от кнопки */
+    color: #1B365D; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-bottom: 20px;
+}
+
+a.btn-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.cards_item{
+    background-color: #F7F7F7;
+}
+.button2{
+    position: relative;
+    z-index: 100;
+    color: #1B365D;
+    font-size: 13px;
+    top: 30px;
+    bottom: 30px;
+    border-radius: 20px;
+    border: 1px solid #ADD4E0;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+.rect3{
+    height: 70px;
+    width: 100%;
+    background-color: #D0E8EA;
+}
+
+.foot{
+    background-color: #af9680;
+    display: flex;
+}
+.logo2{
+    height: 70px;
+    margin-left: 80px;
+    margin: 50px 200px 50px 50px;
+}
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0 60px;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #DADBDD;
+}
+.but1{
+    color: rgb(9, 35, 91);
+    font-size: 11px;
+    left: 150px;
+    top: 580px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.but2{
+    margin-top: 60px;
+    color: #DADBDD;
+    font-size: 11px;
+    left: 150px;
+    top: 580px;
+    border: 2px solid #3D434C;
+    border-radius: 5px;
+    background-color:  #272E38;
+    padding: 10px 80px;
+}
+.teeext{
+    position: absolute;
+    margin-top: 266px;
+    background-color: #272E38;
+}
+.p1{
+    margin: 100px 323px 0px 448px;
+    color: #9CA5B0;
+}
+.p2{
+    margin: 20px 323px 0px 448px;
+    color: #9CA5B0;
+}
+.colonsh2{
+    color: #000000;
+    margin-top: 0px;
+}
+.colonsa{
+    text-decoration: none;
+}
+.section{
+    background-color: #D0E7EA;
+}
+.posl{
+    margin-left: 60px; 
+    color: #DADBDD;
+}
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin-top: 25%;
+    margin-left: 7%;
+    overflow: hidden;
+    padding: 0 50px;
+  }
+  
+  .cards-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .cards_item {
+    flex: 0 0 calc(25% - 15px); /* 4 карточки в ряд по умолчанию */
+    min-width: 0; /* Важно для правильного отображения */
+    scroll-snap-align: start;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+  
+  .slider-btn:hover {
+    background: rgba(0,0,0,0.9);
+  }
+  
+  .slider-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  .prev-btn {
+    left: 5px;
+  }
+  
+  .next-btn {
+    right: 5px;
+  }
+  
+  /* Адаптация под разные экраны */
+  @media (max-width: 1024px) {
+    .cards_item {
+      flex: 0 0 calc(33.33% - 15px); /* 3 карточки */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards_item {
+      flex: 0 0 calc(50% - 15px); /* 2 карточки */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards_item {
+      flex: 0 0 calc(100% - 15px); /* 1 карточка */
+    }
+    
+    .slider-container {
+      padding: 0 35px;
+    }
+  }
+
+
+        /* Подложка (затемнение фона) */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1000;
+        }
+
+        /* Само модальное окно */
+        .modal-content {
+            position: fixed; /* Фиксированное позиционирование */
+            top: 50vh; /* 50% от высоты видимой области */
+            left: 50vw; /* 50% от ширины видимой области */
+            transform: translate(-50%, -50%); /* Точное центрирование */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            max-width: 90%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Форма внутри модалки */
+        .modal-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Группы полей */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #272E38;
+        }
+
+        .form-group input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Кнопки формы */
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .form-buttons button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .ok-button {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .cancel-button {
+            background: #f44336;
+            color: white;
+        }
+
+        /* Отключаем скролл страницы при открытой модалке */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+/* Стили прелоадера */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 209, 209, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.preloader__content {
+    position: relative;
+    text-align: center;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #8c71a5;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
