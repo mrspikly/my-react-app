@@ -4,7 +4,7 @@ export default function Section2(){
   <img src="src/assets/images/imgLogo.png" alt="Footer Logo" className="logo2" />
   
   <div className="menu">
-    <ul className="nav-links">
+    <ul className="nav-links1">
         <li><a href="#">Продукты</a></li>
         <li><a href="#">Особенности</a></li>
         <li><a href="#">Поддержка</a></li>
