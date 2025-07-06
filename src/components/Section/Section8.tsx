@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { products } from './Section8_data';
+import { Link } from 'react-router';
 
 
 
@@ -119,7 +120,7 @@ const ProductSlider: React.FC = () => {
                   <span className="card-price">{product.price}</span>
                 </div>
                 <p className="card-description">{product.description}</p>
-                <button className="card-btn">Купить</button>
+                <Link to="*"><button className="card-btn">Купить</button></Link>
               </div>
             </div>
           </div>

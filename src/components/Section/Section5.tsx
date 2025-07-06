@@ -1,4 +1,4 @@
-export default function Section2(){
+export default function Section5(){
     return <>
 <div className="buk">
     <img src="src/assets/images/фото7.png" className="fhoto7"></img>

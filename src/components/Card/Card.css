@@ -1,0 +1,47 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.loading {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.error {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff0000;
+}
+.popular-products {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+  display: block;
+}
+.popular{
+  text-decoration: none;
+  color: #af9680;
+  font-size: 1.5em;
+}
+  

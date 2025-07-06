@@ -1,4 +1,4 @@
-export default function Section2(){
+export default function Section3(){
     return <>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
