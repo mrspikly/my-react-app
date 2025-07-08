@@ -23,7 +23,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Логика авторизации
+
     onClose();
   };
 

@@ -1,4 +1,53 @@
-/* Модальное окно */
+.logo {
+    margin-left: 80px;
+    height: 50px;
+    width: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #af9680;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #816547;
+}
+
+.auth-button {
+  background-color: white; 
+  border: 1px solid #af9680;
+  color: #af9680;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .modal-overlay {
   position: fixed;
   display: flex;
@@ -79,4 +128,42 @@
 
 .cancel-button:hover {
   background: #e0e0e0;
+}
+@media (max-width: 768px) {
+  nav {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: -4px;
+    height: 40px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .auth-button {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* Убираем лишний отступ справа у последнего элемента */
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
 }

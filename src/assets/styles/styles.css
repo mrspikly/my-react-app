@@ -1,49 +1,9 @@
-header {
-    background-color: #ffffff;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-}
-
-.logo {
-    margin-left: 80px;
-    height: 50px;
-    width: auto;
-}
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-    padding: 0; 
-    margin: 0; 
-    margin-left: 800px;
-    text-decoration: none;
-}
-nav a{
-    text-decoration: none;
-}
-nav li {
-    padding: 10px;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.auth-button {
-    padding: 5px 10px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-right: 150px;
-}
 .fonfoto {
-    max-width: 100%;
-
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .text{
     z-index: 100;
@@ -51,7 +11,7 @@ nav li {
     color: rgb(255 255 255);
     font-size: 47px;
     font-weight: bold;
-    left: 150px;
+    left: 10%;
     margin-right: 50%;
     top: 3%;
 }
@@ -64,40 +24,19 @@ nav li {
     top: 6%;
     margin-right: 1000px;
 }
+
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     flex-direction: column;
     transform: scale(100%);
     height: 100%;
 }
-.button{
-    z-index: 100;
-    position: absolute;
-    color: rgb(9, 35, 91);
-    font-size: 13px;
-    left: 150px;
-    top: 580px;
-    margin-right: 1000px;
-    border-radius: 20px;
-    border: 1px solid black;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    font-weight: bold;
-}
+
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-.card-container {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    gap: 20px; 
-    padding: 70px; 
-}
-
 .product {
     position: relative; 
     width: calc(25% - 20px); 
@@ -120,10 +59,6 @@ html, body {
     text-align: center;
     text-decoration-line: overline;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-}
-
-.product h2 {
-    margin: 10px 0;
 }
 
 .product h5 {
@@ -168,20 +103,18 @@ html, body {
     margin: 48px 500px 120px 150px;
     column-count: 2;
     column-gap: 100px;
+    justify-content: center;
 }
-.colons {
-    break-inside: avoid; 
-    margin-top: 20px; 
-}
-
-.colons p {
-    margin: 10px 0; 
+.colonsh2 {
+    margin: 0px 0px 23px;
+    column-count: 1;
+    column-gap: 20px;
 }
 
-.colons a {
-    display: inline-block; 
-    margin-top: 10px; 
-    color: #0088cc; 
+h1{
+    font-weight: normal;
+    margin: 10px 370px 50px 150px;
+    color: #1B365D;
 }
 .uiop{
     height: 700px;
@@ -190,80 +123,6 @@ html, body {
     float: left;
 }
 
-h1{
-    font-weight: normal;
-    margin: 10px 370px 50px 150px;
-    color: #1B365D;
-}
-.pop{
-    margin-right: 200px;
-    color: #000000;
-    margin-top: -30px;
-    margin-left: 670px;
-}
-
-/* Основной стиль для nav */
-nav {
-    display: flex;
-    justify-content: space-between; /* Размещает элементы по краям */
-    align-items: center; /* Выравнивает элементы по вертикали */
-    background-color: white; /* Белый фон */
-    padding: 10px 20px; /* Поля вокруг содержимого */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для разделения от остального контента */
-    position: relative; /* Для позиционирования других элементов */
-}
-
-/* Логотип */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-/* Список ссылок */
-.nav-links {
-    display: flex;
-    list-style: none; /* Убираем маркеры списка */
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем внутренние отступы */
-}
-
-.nav-links li {
-    margin-right: 20px; /* Отступ между ссылками */
-}
-
-.nav-links a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: #af9680; /* Цвет ссылок */
-    font-size: 16px; /* Размер шрифта */
-    font-weight: 500; /* Жирность текста */
-    transition: color 0.3s ease; /* Анимация при наведении */
-}
-
-.nav-links a:hover {
-    color: #816547; /* Изменение цвета при наведении */
-}
-
-/* Кнопка Авторизации */
-.auth-button {
-    background-color: white; /* Белый фон */
-    border: 1px solid #af9680;
-    color: #af9680; /* Цвет текста */
-    padding: 10px 20px; /* Поля внутри кнопки */
-    font-size: 16px; /* Размер шрифта */
-    font-weight: 500; /* Жирность текста */
-    border-radius: 4px; /* Сглаженные углы */
-    cursor: pointer; /* Указатель мыши при наведении */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация при наведении */
-}
-
-.auth-button:hover {
-    background-color:  #816547; /* Изменение фона при наведении */
-    color: white; /* Изменение цвета текста при наведении */
-}
-
-/* Корректировка последнего элемента списка */
-.nav-links li:last-child {
-    margin-right: 0; /* Убираем отступ у последней ссылки */
-}
 .blue1{
     height: 100px;
     margin: 100px 0px 0px 100px;
@@ -290,7 +149,7 @@ nav {
     color: #1B365D;
     font-size: 13px;
     left: 100px;
-    top: 4496px;
+    top: 68%;
     border-radius: 20px;
     border: 1px solid #ADD4E0;
     background-color: #ADD4E0;
@@ -361,166 +220,51 @@ nav {
     margin-left: 700px;
     margin-right: -650px;
 }
-.textg{
-    position: absolute;
-    color: #af9680;
-    font-size: 40px;
-    font-weight: bold;
-    left: 100px;
-    margin-top: 20%;
-    margin-right: 950px;
-}
-.qwer{
-    position: absolute;
-    height: 50px;
-    margin-left: 90px;
-    margin-top: -50px;
-}
-.ggg1{    
-    position: absolute;
-    font-size: 16px;
-    color: #434140;
-    margin-left: 175px;
-    margin-top: -50px;
-    text-decoration: none;
-}
-.ggg2{    
-    position: absolute;
-    font-size: 16px;
-    color: #434140;
-    margin-left: 175px;
-    margin-top: -30px;
-    text-decoration: none;
-}
+
 .buk {
-  position: relative; /* Основной контейнер */
+  position: relative; 
   width: 100%;
-  height: 100vh; /* Высота на весь экран */
-  overflow: hidden; /* Скрываем выходящие за границы элементы */
+  height: 73vh;
+  overflow: hidden;
 }
 
 .fhoto7 {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Сохраняем пропорции изображения */
-  z-index: 1; /* Изображение на заднем плане */
+  object-fit: cover; 
+  z-index: 1;
   top: 15px;
 }
 
 .text4, .tyu, .tyu2, .tyu3 {
   position: absolute;
-  left: 5%; /* Отступ от левого края */
-  z-index: 2; /* Текст поверх изображения */
-  color: #423932; /* Цвет текста */
-  width: 35%; /* Ширина текстового блока */
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Тень для читаемости */
+  left: 5%; 
+  z-index: 2; 
+  color: #423932;
+  width: 35%;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
 
 .text4 {
-  top: 15%;
-  font-size: 1.5rem;
-  line-height: 1.3;
+    top: 10%;
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
 
 .tyu {
-  top: 35%;
-  font-size: 1.2rem;
+    top: 27%;
+    font-size: 1.2rem;
 }
 
 .tyu2 {
-  top: 50%;
-  font-size: 1.2rem;
+    top: 45%;
+    font-size: 1.2rem;
 }
 
 .tyu3 {
   top: 68%;
   font-size: 1.2rem;
-}
-.cards {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    top: 20px;
-    position: relative; /* Позволяет позиционировать элементы внутри карточки */
-    overflow: hidden; /* Скроет части содержимого за границами карточки */
-    padding: 11px 18px 11px 18px;
-}
-
-.cards_item:hover {
-    transform: scale(1.02); /* Увеличение карточки при наведении*/
-}
-
-.card-title {
-    position: relative;
-    font-size: 17px;
-    left: 1%;
-    top: -17%;
-}
-
-.card-subtitle {
-    position: relative;
-    top: 20px; /* Отступ сверху */
-    left: 140px; /* Отступ справа */
-    font-size: 20px; /* Размер шрифта цены */
-}
-
-.card-img-top {
-    max-width: 100%;
-}
-
-.card-text {
-    margin-top: 60px; /* Отступ между изображением и текстом описания */
-    padding: 10px; /* Внутренние отступы для текста */
-    text-align: center; /* Центрирование текста */
-}
-
-.btn {
-    display: block; /* Кнопки занимают всю ширину родителя */
-    
-    margin: 10px auto; /* Центрирование кнопок */
-    padding: 10px; /* Внутренние отступы для кнопок */
-    border-radius: 5px; /* Скругление углов кнопок */
-}
-
-.btn-primary {
-    background-color: #007bff; /* Цвет фона кнопки */
-    color: white; /* Цвет текста кнопки */
-    border: none; /* Без границы */
-    border-radius: 25px;
-}
-
-a.btn-link {
-    display: block; /* Ссылка занимает всю ширину родителя */
-    text-align: center; /* Центрирование текста в ссылке */
-    margin-top: 5px; /* Отступ сверху от кнопки */
-    color: #1B365D; /* Цвет текста ссылки */
-    text-decoration: none; /* Убираем подчеркивание */
-    margin-bottom: 20px;
-}
-
-a.btn-link:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
-}
-.cards_item{
-    background-color: #F7F7F7;
-}
-.button2{
-    position: relative;
-    z-index: 100;
-    color: #1B365D;
-    font-size: 13px;
-    top: 30px;
-    bottom: 30px;
-    border-radius: 20px;
-    border: 1px solid #ADD4E0;
-    background-color: #ffffff;
-    padding: 10px 20px;
-}
-.rect3{
-    height: 70px;
-    width: 100%;
-    background-color: #D0E8EA;
 }
 
 .foot{
@@ -561,278 +305,10 @@ a.btn-link:hover {
     padding: 10px 20px;
     margin-top: 20px;
 }
-.but2{
-    margin-top: 60px;
-    color: #DADBDD;
-    font-size: 11px;
-    left: 150px;
-    top: 580px;
-    border: 2px solid #3D434C;
-    border-radius: 5px;
-    background-color:  #272E38;
-    padding: 10px 80px;
-}
-.teeext{
-    position: absolute;
-    margin-top: 266px;
-    background-color: #272E38;
-}
-.p1{
-    margin: 100px 323px 0px 448px;
-    color: #9CA5B0;
-}
-.p2{
-    margin: 20px 323px 0px 448px;
-    color: #9CA5B0;
-}
-.colonsh2{
-    color: #000000;
-    margin-top: 0px;
-}
-.colonsa{
-    text-decoration: none;
-}
-.section{
-    background-color: #D0E7EA;
-}
+
 .posl{
     margin-left: 60px; 
     color: #DADBDD;
-}
-.slider-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 55vh auto 5vh;
-  padding: 0 50px;
-  overflow: hidden;
-}
-
-.cards-slider {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  gap: 25px;
-  padding: 25px 5px;
-  
-}
-
-.cards_item {
-  flex: 0 0 calc(25% - 19px);
-  min-width: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
-  background: #fff;
-}
-
-.cards_item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.card-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.cards_item:hover .card-img {
-  transform: scale(1.03);
-}
-
-.card-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.card-price {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #af9680;
-}
-
-.card-description {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
-
-.card-btn {
-  background: #af9680;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-  width: 100%;
-}
-
-.card-btn:hover {
-  background: #9a826e;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 46px;
-  height: 46px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid #f0f0f0;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(4px);
-}
-
-.slider-btn::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-left: 2px solid #745353;
-  border-bottom: 2px solid #745353;
-}
-
-.slider-btn:hover {
-  background: rgba(255, 255, 255, 0.98);
-  transform: translateY(-50%) scale(1.08);
-  border-color: #d7c9bd;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
-}
-
-.slider-btn:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.prev-btn {
-  left: 5px;
-}
-
-.prev-btn::before {
-  transform: rotate(45deg) translateX(1px);
-  margin-left: 3px;
-}
-
-.next-btn {
-  right: 5px;
-}
-
-.next-btn::before {
-  transform: rotate(-135deg) translateX(1px);
-  margin-right: 3px;
-}
-
-
-.slider-dots {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  z-index: 5;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(175, 150, 128, 0.35);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.dot.active {
-  background: #af9680;
-  transform: scale(1.3);
-}
-
-@media (max-width: 1024px) {
-  .cards_item {
-    flex: 0 0 calc(33.333% - 17px);
-  }
-  
-  .card-img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards_item {
-    flex: 0 0 calc(50% - 12.5px);
-  }
-  
-  .slider-container {
-    margin-top: 8vh;
-    padding: 0 30px;
-  }
-  
-  .card-img {
-    height: 180px;
-  }
-}
-
-@media (max-width: 576px) {
-  .cards_item {
-    flex: 0 0 calc(100% - 10px);
-  }
-  
-  .slider-container {
-    padding: 0 20px;
-    margin-top: 6vh;
-  }
-  
-  .slider-btn {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .card-img {
-    height: 220px;
-  }
-  
-  .slider-dots {
-    bottom: 10px;
-  }
-}
-
-
-.benefits-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 30px;
-  margin: 20px 0;
-  padding-left: 20px;
 }
 
 .benefits-list li {
@@ -851,4 +327,210 @@ a.btn-link:hover {
   color: #333;
   display: block;
 }
- 
+@media (max-width: 768px) {
+  .text {
+    font-size: 16px;
+    top: 2%;
+  }
+
+  .text1 {
+    font-size: 10px;
+    top: 3%;
+    left: 10%;
+    margin-right: 0%;
+  }
+}
+@media(max-width: 768px){
+    .text3{
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        left: 28%;
+    }
+    .fhotka {
+        margin-top: 166px;
+        height: auto;
+        max-width: 80%;
+        margin-left: -109px;
+    }
+    .colons {
+        margin: 20px 20px 60px;
+        column-count: 1;
+        column-gap: 20px;
+    }
+    .colons, h2{
+        font-size: 1.0rem;
+        margin: 15px 20px 30px;
+        text-align: center;
+    } 
+}
+@media(max-width: 768px){
+    h1 {
+        font-size: 1.5rem;
+        margin: 15px 20px 30px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .uiop {
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .blue1 {
+        margin: 50px 20px 0;
+        text-align: center;
+    }
+    .p{
+        margin-left: 2%;
+    }
+}
+@media (max-width: 768px) {
+    .fhoto7 {
+        display: none;
+    }
+    .text4, .tyu, .tyu2, .tyu3 {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        max-width: 100%;
+        margin: 15px auto;
+        text-align: center;
+        color: #423932;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-shadow: none;
+        font-size: 14px;    
+    }
+}
+@media (max-width: 768px) {
+    .button1 {
+        position: static;
+        display: block;
+        margin: 30px auto 0;
+        font-size: 14px;
+        padding: 12px 24px;
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+        border-radius: 25px;
+    }
+    .fhoto8 {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        display: block;
+    }
+    .text5 {
+        font-size: 24px;
+        margin: 84px 20px 14px 27px;
+        text-align: center;
+        color: #1B365D;
+    }
+    .text6 {
+        position: static;
+        font-size: 16px;
+        margin: 0 20px 20px;
+        text-align: center;
+        color: #615E5C;
+        line-height: 1.5;
+    }
+
+}
+@media (max-width: 768px) {
+    .fhoto5 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: -112px 0 338px 0;
+    }
+    .fff, .fff1, .ggg, .ggg5,.www, .www1,.fgw {
+        position: static !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        text-align: left;
+        text-shadow: none;
+        display: block;
+        width: auto;
+        clear: both;
+        float: none;
+    }
+    .fff, .fff1 {
+        font-size: 24px;
+        margin: -235px 0 338px 0;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .ggg, .ggg5 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .www, .www1 {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .fgw {
+        margin: 20px 20px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 15px;
+        text-align: left;
+    }
+    .rect1 {
+        height: 500px;
+        width: 100%;
+        background-color: #ffffff;
+        margin-top: 66%;
+}
+ }
+ @media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo2 {
+        height: 50px;
+        margin: 0 0 0px 0px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .but1 {
+        margin-left: 2px;
+        margin-right: 20px;
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+
+    .posl {
+        margin: -48px 0 0 17px;
+        font-size: 13px;
+    }
+}

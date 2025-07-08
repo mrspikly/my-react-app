@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './Preloader.css'; // Убедитесь, что создали этот файл
+import './Preloader.css';
 
 const Preloader = () => {
   const [isVisible, setIsVisible] = useState(true);

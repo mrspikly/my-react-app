@@ -18,7 +18,6 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
       <div className={'price'}>
         <h2>{title}</h2>
         <h5>{description}</h5>
-        <a href="#">Посмотреть ещё</a>
       </div>
     </div>
   );

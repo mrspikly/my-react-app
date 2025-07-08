@@ -13,7 +13,7 @@ interface CardData {
   imageUrl: string;
 }
 
-// Добавляем интерфейс для пропсов компонента
+
 interface CardListProps {
   limit?: number;
 }
@@ -26,7 +26,6 @@ const CardList: React.FC<CardListProps> = ({ limit = 4 }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Используем limit из пропсов в URL запроса
         const response = await fetch(
           `https://jsonplaceholder.typicode.com/posts?_limit=${limit}`
         );
@@ -52,7 +51,7 @@ const CardList: React.FC<CardListProps> = ({ limit = 4 }) => {
     };
 
     fetchData();
-  }, [limit]); // Добавляем limit в зависимости useEffect
+  }, [limit]); 
 
   if (loading) return <div className="loading">Загрузка...</div>;
   if (error) return <div className="error">Ошибка: {error}</div>;

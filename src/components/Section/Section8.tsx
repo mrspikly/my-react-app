@@ -15,9 +15,6 @@ const ProductSlider: React.FC = () => {
   const [visibleCards, setVisibleCards] = useState(4);
   const [maxPosition, setMaxPosition] = useState(0);
 
- 
-
-  // Обновление параметров слайдера
   const updateSliderParams = () => {
     if (!sliderRef.current || !sliderContainerRef.current) return;
 
@@ -50,7 +47,6 @@ const ProductSlider: React.FC = () => {
     }
   };
 
-  // Перемещение слайдера
   const moveSlider = (direction: 'prev' | 'next') => {
     const step = cardWidth * visibleCards;
     let newPosition = currentPosition;
@@ -63,7 +59,6 @@ const ProductSlider: React.FC = () => {
 
     setCurrentPosition(newPosition);
 
-    // Обновляем состояние кнопок
     if (prevBtnRef.current) {
       prevBtnRef.current.disabled = newPosition >= 0;
     }
@@ -72,7 +67,6 @@ const ProductSlider: React.FC = () => {
     }
   };
 
-  // Инициализация и обновление при ресайзе
   useEffect(() => {
     const init = () => {
       updateSliderParams();
@@ -83,12 +77,11 @@ const ProductSlider: React.FC = () => {
     };
 
     window.addEventListener('resize', init);
-    setTimeout(init, 100); // Добавляем задержку для полной загрузки DOM
+    setTimeout(init, 100);
 
     return () => window.removeEventListener('resize', init);
   }, []);
 
-  // Применяем позицию при изменении
   useEffect(() => {
     if (sliderRef.current) {
       sliderRef.current.style.transition = 'transform 0.5s ease';

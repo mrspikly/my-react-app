@@ -15,8 +15,7 @@ export default function Section2(){
     <p className="posl">
       Подпишитесь на стильные новости: анонсы коллекций,<br /> 
       секреты ухода и эксклюзивные предложения.<br />
-      <Link to="*"><button className="but1">Sign Up</button><br /></Link>
-      <button className="but2">United States (English)</button>
+      <Link to="*"><button className="but1">Подписаться</button><br /></Link>
     </p>
   </div>
   </div>
