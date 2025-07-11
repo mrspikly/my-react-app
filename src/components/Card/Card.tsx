@@ -13,9 +13,9 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
       <img 
         src={imageUrl} 
         alt={title} 
-        className={'fhoto1'} 
+        className={'photo1'} 
       />
-      <div className={'price'}>
+      <div className={'card-content'}>
         <h2>{title}</h2>
         <h5>{description}</h5>
       </div>

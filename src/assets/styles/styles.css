@@ -44,12 +44,12 @@ html, body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.fhoto1 {
+.photo1 {
     width: 100%; 
     height: auto;
 }
 
-.price {
+.card-content {
     position: absolute;
     bottom: 0; 
     left: 0; 
@@ -146,13 +146,13 @@ h1{
 .button1{
     z-index: 100;
     position: absolute;
-    color: #1B365D;
+    color: #ffffff;
     font-size: 13px;
-    left: 100px;
-    top: 68%;
+    left: 0%;
+    top: 127%;
     border-radius: 20px;
     border: 1px solid #ADD4E0;
-    background-color: #ADD4E0;
+    background-color: #af9680;
     padding: 10px 20px;
 }
 .fhoto8{
@@ -313,7 +313,7 @@ h1{
 
 .benefits-list li {
   position: relative;
-  padding-left: 28px;
+  padding-left: 0%;
 }
 .popular-products {
   padding: 50px 0;
